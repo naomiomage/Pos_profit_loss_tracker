@@ -108,7 +108,7 @@ Implement JWT Authentication for users
 
 
 
-GitHub Link: https://github.com/your-username/Pos\_profit\_loss\_tracker
+https://github.com/naomiomage/Pos\_profit\_loss\_tracker
 
 
 
