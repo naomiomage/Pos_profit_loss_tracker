@@ -1,30 +1,72 @@
-# Pos\_profit\_loss\_tracker
-
-An API to help POS agents track daily profit and loss.
+# POS Profit \& Loss Tracker
 
 
 
-This is a Django REST Framework project that helps POS agents record their daily transactions (deposit, withdrawal, transfer, expenses, and charges) and automatically calculate profit or loss.
+An API designed to help POS agents track daily profit and loss.
 
 
 
-💡 Project Overview
+This Django REST Framework project enables POS agents to record their daily transactions (deposit, withdrawal, transfer, expenses, and charges) and automatically calculate profit or loss.
+
+It provides a clear overview of financial performance and helps agents make informed decisions.
 
 
 
-This week focused on building the core functionality — the Transaction API.
-
-Users (POS agents) can now create, view, update, and delete transactions in their account.
-
-Each transaction is tied to a user and includes its type, amount, description, and date.
+## Project Overview
 
 
 
-✅ Progress (Week 3)
+The POS Profit \& Loss Tracker simplifies financial tracking for POS agents.
+
+It allows users to:
 
 
 
-Completed:
+* Record all types of daily transactions.
+
+
+
+* Automatically calculate daily profit and loss.
+
+
+
+* View summaries of total income, expenses, and charges.
+
+
+
+* Manage transactions securely through authentication.
+
+
+
+* Each transaction is tied to a registered user and includes details such as type, amount, description, and date.
+
+
+
+### **Key Features**
+
+
+
+User authentication and secure access
+
+
+
+CRUD operations for transactions
+
+
+
+Automatic profit and loss summary calculation
+
+
+
+Filter transactions by date or type
+
+
+
+Easy-to-use RESTful API endpoints
+
+
+
+#### Completed Tasks
 
 
 
@@ -32,11 +74,7 @@ Set up Django project and GitHub repository
 
 
 
-Created transactions app
-
-
-
-Added Transaction model
+Created the transactions app and Transaction model
 
 
 
@@ -44,31 +82,29 @@ Built CRUD API endpoints using Django REST Framework
 
 
 
-Tested endpoints successfully with authentication
+Implemented summary endpoint to calculate profit and loss
 
 
 
-Endpoints working now:
+
+
+#### API Endpoints
+
+##### Method	Endpoint	Description
+
+GET	/api/transactions/	Retrieve all user transactions
+
+POST	/api/transactions/	Add a new transaction
+
+GET	/api/transactions/summary/	View total profit and loss summary
+
+PUT	/api/transactions/{id}/	Update a specific transaction
+
+DELETE	/api/transactions/{id}/	Delete a specific transaction
 
 
 
-GET /api/transactions/ → List user’s transactions
-
-
-
-POST /api/transactions/ → Add a new transaction
-
-
-
-PUT /api/transactions/{id}/ → Update a transaction
-
-
-
-DELETE /api/transactions/{id}/ → Delete a transaction
-
-
-
-⚙️ Tech Stack
+##### Tech Stack
 
 
 
@@ -88,23 +124,27 @@ SQLite (default database)
 
 
 
-📅 Next Steps (Week 4)
+
+
+##### Future Improvements
 
 
 
-Build Reports App to calculate daily profit \& loss
+Add frontend interface for easier interaction
 
 
 
-Add date-range summaries
+Include export options (PDF or Excel)
 
 
 
-Implement JWT Authentication for users
+Add email reports for daily profit and loss summaries
 
 
 
-🔗 Repository
+
+
+##### Repository
 
 
 
@@ -112,11 +152,15 @@ https://github.com/naomiomage/Pos\_profit\_loss\_tracker
 
 
 
-👩‍💻 Author
+##### Author
+
+Naomi Omage
+
+ALX Capstone Project (Final Submission)
 
 
 
 Naomi Omage
 
-ALX Capstone Project (Week 3)
+ALX Capstone Project (Final Submission)
 
